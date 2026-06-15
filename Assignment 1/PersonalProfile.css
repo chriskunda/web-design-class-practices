@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
 
 .container{
@@ -20,8 +20,9 @@
     padding: 20px;
     height: 90vh;
     width: 30%;
-    background-color: yellow;
+    background-color: rgb(249, 228, 241);
     border: 2px solid brown;
+    border-radius: 30px;
 }
 
 .profile-img{
@@ -29,4 +30,32 @@
     height: 150px;
     border-radius: 50%;
     border: 2px solid brown;
+}
+
+.personal-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+
+i{
+    margin-right: 25px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+p{
+    margin-bottom: 10px;
+    font-family: "Encode Sans Expanded", sans-serif;
+}
+
+li{
+    margin-left: 20px;
+    font-family: "Encode Sans Expanded", sans-serif;
+}
+
+h1, h2{
+    font-family: "Candal", sans-serif;
 }
