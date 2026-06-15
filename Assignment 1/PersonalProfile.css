@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
 .personal-profile{
     display: flex;
     flex-direction: column;
@@ -11,10 +18,15 @@
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    height: 90vh;
+    width: 30%;
+    background-color: yellow;
+    border: 2px solid brown;
 }
 
 .profile-img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    border: 2px solid brown;
 }
