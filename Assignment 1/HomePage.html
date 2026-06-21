@@ -1,37 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newspaper</title>
-
-    <link rel="stylesheet" href="Homepage.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrightNews | Home</title>
+  <link rel="stylesheet" href="Homepage.css">
 </head>
 <body>
-    <div class="container">
-        <div class="heading">
-            <div class="title"><h1>NEWSPAPER</h1></div>
+  <div class="container">
+    <header class="top">
+      <p class="date">Mon. June 22, 2026</p>
+      <h1 class="logo">bright<span>news</span></h1>
 
-            <div class="subtitle">
-                <div class="subtitle-left">
-                    <div class="subtle"><p>Kigalians</p></div>
-                    <div class="suggests">
-                        <div><p>Suggestion 1</p></div>
-                        <div><p>Suggestion 2</p></div>
-                        <div><p>Suggestion 3</p></div>
-                    </div>
-                </div>
-                <div class="subtitle-right"><p>Editor</p></div>
+      <nav>
+        <a class="active" href="index.html">Home</a>
+        <a href="sports.html">Sports</a>
+        <a href="tech.html">Tech</a>
+        <a href="#">Politics</a>
+        <a href="#">Business</a>
+        <a href="#">Culture</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <article class="main-story">
+          <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Newspapers on a table">
+          <div class="dark-cover"></div>
+          <div class="story-info">
+            <p class="tag">News</p>
+            <h2>City Students Launch a Weekend Newspaper for Young Voices</h2>
+            <p>2h ago - Local Desk</p>
+          </div>
+        </article>
+
+        <div class="side-stories">
+          <article class="small-story">
+            <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Football players">
+            <div class="dark-cover"></div>
+            <div class="story-info">
+              <p class="tag">Sports</p>
+              <h3>Academy Team Wins Final After Last-Minute Goal</h3>
             </div>
-            <div></div>
+          </article>
 
+          <article class="small-story">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Laptop with code">
+            <div class="dark-cover"></div>
+            <div class="story-info">
+              <p class="tag">Tech</p>
+              <h3>New Coding Club Helps Beginners Build Their First Apps</h3>
+            </div>
+          </article>
+
+          <article class="small-story">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Students working">
+            <div class="dark-cover"></div>
+            <div class="story-info">
+              <p class="tag">Campus</p>
+              <h3>Debate Club Prepares for Regional Public Speaking Event</h3>
+            </div>
+          </article>
+
+          <article class="small-story">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Concert crowd">
+            <div class="dark-cover"></div>
+            <div class="story-info">
+              <p class="tag">Culture</p>
+              <h3>Arts Festival Brings Music, Dance, and Poetry to Town</h3>
+            </div>
+          </article>
         </div>
-    </div>
+      </section>
+
+      <section class="content">
+        <section class="popular">
+          <h2 class="section-title">Popular news</h2>
+
+          <article class="news-row">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="City buildings">
+            <div>
+              <h3>Small Businesses Try New Ideas to Bring More People Downtown</h3>
+              <p>Shop owners are using weekend markets and student discounts to bring more people into the city center.</p>
+              <p class="time">Business - 6h ago</p>
+            </div>
+          </article>
+
+          <article class="news-row">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Students studying">
+            <div>
+              <h3>Library Opens Quiet Study Rooms for Exam Season</h3>
+              <p>The new schedule gives students more evening time to revise, meet study groups, and borrow learning materials.</p>
+              <p class="time">Education - 8h ago</p>
+            </div>
+          </article>
+
+          <article class="news-row">
+            <img src="https://images.unsplash.com/photo-1478147427282-58a87a120781?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="People in a city">
+            <div>
+              <h3>Community Leaders Discuss Safer Crosswalks Near Schools</h3>
+              <p>Parents and students asked for brighter signs, slower traffic zones, and better morning supervision.</p>
+              <p class="time">Local - 10h ago</p>
+            </div>
+          </article>
+        </section>
+
+        <aside>
+          <div class="search-box">
+            <h2>Search</h2>
+            <input type="text" placeholder="I'm looking for...">
+            <button>Search</button>
+          </div>
+
+          <div class="topics">
+            <h2>Topics</h2>
+            <ul>
+              <li>Sports</li>
+              <li>Technology</li>
+              <li>Culture</li>
+              <li>School Life</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      BrightNews is a fictional school project made with HTML and CSS only.
+    </footer>
+  </div>
 </body>
 </html>
